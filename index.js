@@ -29,7 +29,7 @@ try {
   const argObj = getArgs(process.argv);
   if (!argObj.isValuesExsit()) {
     console.error(
-      `Arguments error. Please fill in the file name and format.\n\ne.g: 'mermaidConverter -f ./myMD.md -o md'\n\n - f: File name\n - o:\n      md: SVG to markdown\n      SVG: Markdown to SVG`
+      `Arguments error. Please fill in the file name and format.\n\ne.g: 'mermaidConverter -f ./myMD.md -o md'\n\n - f: File name\n - o: Output format\n      md: SVG to markdown\n      SVG: Markdown to SVG`
     );
     return;
   }
