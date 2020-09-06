@@ -14,7 +14,7 @@ $ npm install -g mermaid-js-converter
 
 ## How to use
 
-![](https://i.imgur.com/1H4Izj5.gif)
+![](https://i.imgur.com/Tkf5vim.gif)
 
 ```bash
 $ mjc -f myMD.md -o SVG
