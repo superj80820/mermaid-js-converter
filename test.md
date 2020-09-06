@@ -1,11 +1,69 @@
-# test
+# Test
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiXG5zZXF1ZW5jZURpYWdyYW1cbiAgICBBbGljZS0-PitKb2huOiBIZWxsbyBKb2huLCBob3cgYXJlIHlvdT9cbiAgICBBbGljZS0-PitKb2huOiBKb2huLCBjYW4geW91IGhlYXIgbWU_XG4gICAgSm9obi0tPj4tQWxpY2U6IEhpIEFsaWNlLCBJIGNhbiBoZWFyIHlvdSFcbiAgICBKb2huLS0-Pi1BbGljZTogSSBmZWVsIGdyZWF0IVxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiXG5zZXF1ZW5jZURpYWdyYW1cbiAgICBBbGljZS0-PitKb2huOiBIZWxsbyBKb2huLCBob3cgYXJlIHlvdT9cbiAgICBBbGljZS0-PitKb2huOiBKb2huLCBjYW4geW91IGhlYXIgbWU_XG4gICAgSm9obi0tPj4tQWxpY2U6IEhpIEFsaWNlLCBJIGNhbiBoZWFyIHlvdSFcbiAgICBKb2huLS0-Pi1BbGljZTogSSBmZWVsIGdyZWF0IVxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)
+Flow Chart
 
-test
+```mermaid
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+```
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiXG5zZXF1ZW5jZURpYWdyYW1cbiAgICBBbGljZS0-PitKb2huOiBIZWxsbyB0dHQsIGhvdyBhcmUgeW91P1xuICAgIEFsaWNlLT4-K0pvaG46IEpvaG4sIGNhbiB5b3UgaGVhciBtZT9cbiAgICBKb2huLS0-Pi1BbGljZTogSGkgQWxpY2UsIEkgY2FuIGhlYXIgeW91IVxuICAgIEpvaG4tLT4-LUFsaWNlOiBJIGZlZWwgZ3JlYXQhXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiXG5zZXF1ZW5jZURpYWdyYW1cbiAgICBBbGljZS0-PitKb2huOiBIZWxsbyB0dHQsIGhvdyBhcmUgeW91P1xuICAgIEFsaWNlLT4-K0pvaG46IEpvaG4sIGNhbiB5b3UgaGVhciBtZT9cbiAgICBKb2huLS0-Pi1BbGljZTogSGkgQWxpY2UsIEkgY2FuIGhlYXIgeW91IVxuICAgIEpvaG4tLT4-LUFsaWNlOiBJIGZlZWwgZ3JlYXQhXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)
+Sequence Diagram
 
-test2
+```mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+```
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiXG5zZXF1ZW5jZURpYWdyYW1cbiAgICBBbGljZS0-PitKb2huOiBIZWxsbyBycnJyLCBob3cgYXJlIHlvdT9cbiAgICBBbGljZS0-PitKb2huOiBKb2huLCBjYW4geW91IGhlYXIgbWU_XG4gICAgSm9obi0tPj4tQWxpY2U6IEhpIEFsaWNlLCBJIGNhbiBoZWFyIHlvdSFcbiAgICBKb2huLS0-Pi1BbGljZTogSSBmZWVsIGdyZWF0IVxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiXG5zZXF1ZW5jZURpYWdyYW1cbiAgICBBbGljZS0-PitKb2huOiBIZWxsbyBycnJyLCBob3cgYXJlIHlvdT9cbiAgICBBbGljZS0-PitKb2huOiBKb2huLCBjYW4geW91IGhlYXIgbWU_XG4gICAgSm9obi0tPj4tQWxpY2U6IEhpIEFsaWNlLCBJIGNhbiBoZWFyIHlvdSFcbiAgICBKb2huLS0-Pi1BbGljZTogSSBmZWVsIGdyZWF0IVxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)
+Class Diagram
+
+```mermaid
+classDiagram
+    Animal <|-- Duck
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+      +String beakColor
+      +swim()
+      +quack()
+    }
+    class Fish{
+      -int sizeInFeet
+      -canEat()
+    }
+    class Zebra{
+      +bool is_wild
+      +run()
+    }
+```
+
+State Diagram
+
+```mermaid
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
+Pie Chart
+
+```mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```

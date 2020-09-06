@@ -5,6 +5,10 @@ function mdToSVG(data) {
 
   const jsonStrings = matchData
     .map((item) => item.replace("```mermaid", "").replace("```", ""))
+    // Workaround for classdiagram
+    .map((item) =>
+      item.startsWith("\nclass") ? item.substr(1, item.length - 1) : item
+    )
     .map((item) =>
       JSON.stringify({
         code: item,
@@ -42,7 +46,10 @@ function SVGToMd(data) {
   let originMd = data;
 
   matchData.forEach((item, index) => {
-    const { code } = JSON.parse(Base64.decode(encodedURIs[index]));
+    // Workaround for classdiagram about assignment let
+    let { code } = JSON.parse(Base64.decode(encodedURIs[index]));
+    // Workaround for classdiagram
+    if (code.startsWith("class")) code = `\n${code}`;
     originMd = originMd.replace(item, "```mermaid" + code + "```\n");
   });
 
