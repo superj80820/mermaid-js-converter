@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const fs = require("fs");
 const converter = require("./converter");
 const Result = require("folktale/result");
