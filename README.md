@@ -33,7 +33,7 @@ Although Gitlab has been supported, it is not supported Github.
 
 This repository is affected by this [issue](https://github.com/github/markup/issues/533) inspired.
 
-If the Markdown of a website does not support Mermaid, you can use this tool
+If the Markdown of a website does not support Mermaid, you can use this tool.
 
 Of course, it would be better if Mermaid could be listed as a Markdown standard.
 
