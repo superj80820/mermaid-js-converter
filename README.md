@@ -14,7 +14,13 @@ $ npm install -g mermaid-js-converter
 
 ## How to use
 
+![](https://i.imgur.com/tB57hpi.png)
+
+Add `mermaid` to the code block in Markdown to make this tool detect conversion. Like [example.md](./example.md)
+
 ![](https://i.imgur.com/Tkf5vim.gif)
+
+Then execute the conversion command line.
 
 ```bash
 $ mjc -f myMD.md -o SVG
@@ -43,6 +49,7 @@ Of course, it would be better if Mermaid could be listed as a Markdown standard.
 - [x] Sequence Diagram
 - [x] Class Diagram
 - [x] State Diagram
-- [ ] Gantt Chart
+- [x] Gantt Chart
 - [x] Pie Chart
-- [ ] ER Diagram
+- [x] ER Diagram
+- [x] User Journey
