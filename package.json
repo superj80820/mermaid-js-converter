@@ -1,6 +1,6 @@
 {
   "name": "mermaid-js-converter",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "bin": {
     "mjc": "index.js"
