@@ -14,7 +14,7 @@ $ npm install -g mermaid-js-converter
 
 ## How to use
 
-![](https://i.imgur.com/tB57hpi.png)
+<img src="https://i.imgur.com/tB57hpi.png" width="450">
 
 Add `mermaid` to the code block in Markdown to make this tool detect conversion. Like [example.md](./example.md)
 
