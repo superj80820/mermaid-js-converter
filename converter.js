@@ -7,7 +7,12 @@ function mdToSVG(data) {
     .map((item) => item.replace("```mermaid", "").replace("```", ""))
     // Workaround for classdiagram
     .map((item) =>
-      item.startsWith("\nclass") ? item.substr(1, item.length - 1) : item
+      item.startsWith("\nclass") ||
+      item.startsWith("\ngantt") ||
+      item.startsWith("\nerDiagram") ||
+      item.startsWith("\njourney")
+        ? item.substr(1, item.length - 1)
+        : item
     )
     .map((item) =>
       JSON.stringify({
@@ -49,7 +54,13 @@ function SVGToMd(data) {
     // Workaround for classdiagram about assignment let
     let { code } = JSON.parse(Base64.decode(encodedURIs[index]));
     // Workaround for classdiagram
-    if (code.startsWith("class")) code = `\n${code}`;
+    if (
+      code.startsWith("class") ||
+      code.startsWith("gantt") ||
+      code.startsWith("erDiagram") ||
+      code.startsWith("journey")
+    )
+      code = `\n${code}`;
     originMd = originMd.replace(item, "```mermaid" + code + "```\n");
   });
 
