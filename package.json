@@ -1,13 +1,14 @@
 {
   "name": "mermaid-js-converter",
-  "version": "1.0.13",
+  "version": "2.0.0",
   "description": "",
   "bin": {
     "mjc": "index.js"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "beauty": "yarn prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,12 @@
   },
   "homepage": "https://github.com/superj80820/mermaid-js-converter#readme",
   "dependencies": {
-    "folktale": "^2.3.2",
-    "js-base64": "^3.4.5"
+    "commander": "^9.4.0",
+    "js-base64": "^3.4.5",
+    "pako": "^2.0.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "prettier": "2.7.1"
   }
 }

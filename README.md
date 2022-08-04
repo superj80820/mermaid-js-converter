@@ -1,6 +1,7 @@
 # mermaid-js-converter
 
-You can use command line to convert [Mermaid](https://github.com/mermaid-js/mermaid)'s Markdown format into a more general SVG.
+You can use command line to convert [Mermaid](https://github.com/mermaid-js/mermaid)'s Markdown format into a more
+general SVG.
 
 ## Requires
 
@@ -23,13 +24,21 @@ Add `mermaid` to the code block in Markdown to make this tool detect conversion.
 Then execute the conversion command line.
 
 ```bash
-$ mjc -f myMD.md -o SVG
+$ mjc myMD.md myMD-out.md -t svg
 ```
 
-- -f: File name
-- -o: Output format
-  - md: SVG to markdown
-  - SVG: Markdown to SVG
+```bash
+Arguments:
+  input              md file for converting
+  output             md file for save
+
+Options:
+  -t, --type <type>  type converting file (choices: "svg", "png", "md")
+  --use-kroki        use kroki for converting
+  --use-link         add link on live editor mermaid
+  -s --style <file>  use style json file into mermaid
+  -h, --help         display help for command
+```
 
 ## Why this repository
 
