@@ -1,7 +1,8 @@
 const Base64 = require("js-base64");
 
 function mdToSVG(data) {
-  const matchData = data.match(/```mermaid(.|\n)*?```/gm);
+  // fixed https://github.com/superj80820/mermaid-js-converter/issues/1
+  const matchData = data.match(/```mermaid([^\n]*\n?)*```/gm);
 
   const jsonStrings = matchData
     .map((item) => item.replace("```mermaid", "").replace("```", ""))
